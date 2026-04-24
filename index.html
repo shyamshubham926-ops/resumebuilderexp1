@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #444;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .inline {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Resume Builder Form</h1>
+
+<form>
+
+    <!-- Personal Details -->
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" class="inline" required> Male
+        <input type="radio" name="gender" class="inline"> Female
+        <input type="radio" name="gender" class="inline"> Other
+
+        <label>Address</label>
+        <textarea placeholder="Enter your address" required></textarea>
+
+        <label>Upload Photo</label>
+        <input type="file" required>
+
+    </fieldset>
+
+    <!-- Education Details -->
+    <fieldset>
+        <legend>Education Details</legend>
+
+        <label>10th Percentage</label>
+        <input type="text" placeholder="Enter 10th %" required>
+
+        <label>12th Percentage</label>
+        <input type="text" placeholder="Enter 12th %" required>
+
+        <label>Graduation Degree</label>
+        <input type="text" placeholder="Enter degree name" required>
+
+        <label>College Name</label>
+        <input type="text" placeholder="Enter college name" required>
+
+        <label>Passing Year</label>
+        <input type="date" required>
+
+    </fieldset>
+
+    <!-- Skills & Experience -->
+    <fieldset>
+        <legend>Skills & Experience</legend>
+
+        <label>Technical Skills</label>
+        <textarea placeholder="Enter your skills (e.g. Java, Python, HTML)" required></textarea>
+
+        <label>Internship Experience</label>
+        <textarea placeholder="Describe your internship experience"></textarea>
+
+        <label>Projects Completed</label>
+        <textarea placeholder="Describe your projects"></textarea>
+
+        <label>Experience Level</label>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>Fresher</option>
+            <option>1-2 Years</option>
+            <option>3-5 Years</option>
+            <option>5+ Years</option>
+        </select>
+
+    </fieldset>
+
+    <!-- Additional Information -->
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        <label>Career Objective</label>
+        <textarea placeholder="Write your career objective" required></textarea>
+
+        <label>Languages Known</label>
+        <input type="checkbox" class="inline"> English
+        <input type="checkbox" class="inline"> Hindi
+        <input type="checkbox" class="inline"> Other
+
+        <label>Hobbies / Interests</label>
+        <textarea placeholder="Enter your hobbies"></textarea>
+
+    </fieldset>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button type="submit" class="submit-btn">Submit Resume</button>
+        <button type="reset" class="reset-btn">Reset Form</button>
+    </div>
+
+</form>
+
+</body>
+</html>
